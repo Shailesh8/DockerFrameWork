@@ -1,0 +1,9 @@
+21:19:48.026 [Caller+0	 at play.Logger$ALogger.debug(Logger.java:332)
+Caller+1	 at Automattercontrollers.AutomatterApplication.index(AutomatterApplication.java:14)
+  : 1585039]   DEBUG  Automatter - Entered into method  
+21:20:54.365 [Caller+0	 at play.Logger$ALogger.debug(Logger.java:332)
+Caller+1	 at Automattercontrollers.AutomatterApplication.index(AutomatterApplication.java:14)
+  : 1651378]   DEBUG  Automatter - Entered into method  
+21:36:24.928 [Caller+0	 at play.Logger$ALogger.debug(Logger.java:332)
+Caller+1	 at Automattercontrollers.AutomatterApplication.index(AutomatterApplication.java:14)
+  : 2581941]   DEBUG  Automatter - Entered into method  

@@ -1,0 +1,39 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           DFcontrollers.DF.index()
+
+
+GET     /StartContainer/:containerId            DFcontrollers.Dockercontroller.startContainer(containerId)
+GET     /PauseContainer/:containerId            DFcontrollers.Dockercontroller.pauseContainer(containerId)
+GET     /DockerVersion                          DFcontrollers.Dockercontroller.dockerVersion()
+GET     /RemoveContainer/:containerId           DFcontrollers.Dockercontroller.removeContainer(containerId)
+GET     /UnpauseContainer/:containerId          DFcontrollers.Dockercontroller.unpauseContainer(containerId)
+GET     /WaitContainer/:containerId             DFcontrollers.Dockercontroller.waitContainer(containerId)
+GET     /StopContainer/:containerId             DFcontrollers.Dockercontroller.stopContainer(containerId)
+GET     /RestartContainer/:containerId          DFcontrollers.Dockercontroller.restartContainer(containerId)
+GET     /InspectContainer/:containerId          DFcontrollers.Dockercontroller.inspectContainer(containerId)
+GET     /CreateContainer                        DFcontrollers.Dockercontroller.createContainer()
+GET     /PingDockerServer                       DFcontrollers.Dockercontroller.pingDockerServer()
+GET     /TopContainer/:containerId              DFcontrollers.Dockercontroller.topContainer(containerId)  
+GET     /ListContainer                          DFcontrollers.Dockercontroller.listContainer()
+GET     /ContainerDiffCmd/:containerId          DFcontrollers.Dockercontroller.containerDiffCmd(containerId) 
+GET     /AttachContainer/:containerId           DFcontrollers.Dockercontroller.attachContainer(containerId)
+GET     /ListImage                               DFcontrollers.Dockercontroller.listImage()
+GET     /KillContainer/:containerId                          DFcontrollers.Dockercontroller.killContainer(containerId)
+GET     /RemoveImage/:imageId                   DFcontrollers.Dockercontroller.removeImage(imageId)
+GET     /InspectImage/:imageId                  DFcontrollers.Dockercontroller.inspectImage(imageId)
+GET     /InfoCmd                                DFcontrollers.Dockercontroller.infoCmd() 
+GET     /CopyFileFromContainer/:containerId/:resource                  DFcontrollers.Dockercontroller.copyFileFromContainer(containerId,resource)
+GET     /ListContains                           DFcontrollers.Dockercontroller.listCont()
+GET     /InspContains/:containerId              DFcontrollers.Dockercontroller.inspCont(containerId)
+GET     /CretContains                           DFcontrollers.Dockercontroller.cretCont()
+GET     /TopContains/:containerId               DFcontrollers.Dockercontroller.topCont(containerId)
+GET     /Pong                                   DFcontrollers.Dockercontroller.pong() 
+
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
