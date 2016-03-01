@@ -1,4 +1,23 @@
-This is your new Play application
-=================================
+      Framework :: Play Framework (support RESTFULL architecture )
+      DataBase :: MongoDB [NOSQL]
 
-This file will be packaged with your application, when using `activator dist`.
+       To run the project :: ./activator run
+        
+        Minimum Requirememt :: 
+                         MongDB[please update the ip add and port for mongo server in in                           
+                         /conf/DBconfig.properties],
+                         Java 8 
+
+   API ::
+   GET                /list                      controllers.ApplicationController.getAll()
+   GET                /                          controllers.ApplicationController.getMapService()   
+   GET                /count                     controllers.ApplicationController.getCount()   
+   GET                /search/:query  controllers.ApplicationController.getResult(query)
+
+
+  For search::
+             pattern is name or category = value
+                                 for example http://localhost:9000/search/name=PizzaHut
+
+All response are in JSON
+
